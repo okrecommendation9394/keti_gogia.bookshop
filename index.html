@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <section class="main-page">
+      <header>
+        <a href="index.html" class="logo">
+          <img src="images/icon.png" alt="logo" class="logo_img" />
+          <div>Bookshop</div>
+        </a>
+        <div class="search_section">
+          <input
+            type="text"
+            id="input"
+            class="input_field"
+            placeholder="Type book name here"
+          />
+          <button onclick="getbooks()" class="search">
+            <img src="images/magnifier.svg" alt="magnifier" /></button
+          ><br />
+        </div>
+        <!-- <div class="location">Choose a Bookstore</div> -->
+        <nav>
+          <ul class="location">
+            <li class="list-item"><a href="about.html">About Us</a></li>
+            <li class="list-item">
+              <a href="location.html">Choose a Bookstore</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#cart"
+          ><img src="images/basket.svg" alt="basket" class="basket"
+        /></a>
+      </header>
+      <div id="output"></div>
+      <div id="div1"></div>
+      <section aria-label="New Photos" class="section1">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">
+            &#8656;
+          </button>
+          <button class="carousel-button next" data-carousel-button="next">
+            &#8658;
+          </button>
+          <div class="quote">
+            <div>
+              "If you don&apos;t like to read, you haven&apos;t found the right
+              book."
+            </div>
+            <div>– J.K. Rowling</div>
+          </div>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="images/halloween.jpg" alt="sky" />
+            </li>
+            <li class="slide">
+              <img src="images/autumn.jpg" alt="sky" />
+            </li>
+            <li class="slide">
+              <img src="images/library.jpg" alt="sky" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="heading">Learn Programming</div>
+        <div class="container"></div>
+      </section>
+    </section>
+    <section class="cart-section" id="cart">
+      <header>
+        <a href="index.html" class="back-button">Empty the cart</a>
+        <div id="total"></div>
+      </header>
+      <div id="added-to-cart"></div>
+      <a href="#" class="buy-button">Buy</a>
+    </section>
+    <section id="form"></section>
+    <script src="index.js"></script>
+  </body>
+</html>

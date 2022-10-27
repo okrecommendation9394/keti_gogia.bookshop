@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/icon.png" alt="logo" class="logo_img" />
+        <div>Bookshop</div>
+      </a>
+      <div class="search_section"></div>
+      <nav>
+        <ul class="location">
+          <li class="list-item"><a href="about.html">About Us</a></li>
+          <li class="list-item">
+            <a href="location.html">Choose a Bookstore</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="index.html#cart"
+        ><img src="images/basket.svg" alt="basket" class="basket"
+      /></a>
+    </header>
+    <section class="abouts-section">
+      <h1>About Us</h1>
+      <p>
+        Bookshop is an Georgian bookseller. It is the bookseller with the
+        largest number of retail outlets in Georgia
+      </p>
+      <h3>We offer you</h3>
+      <ul>
+        <li class="offer-item">
+          <label class="options" id="giftcard" for="giftcard"
+            >Bookshop Giftcards</label
+          >
+          <select name="" id="giftcard">
+            <option value="50">50$ GiftCard</option>
+            <option value="70">70$ GiftCard</option>
+            <option value="100">100$ GiftCard</option>
+            <option value="200">200$ GiftCard</option>
+          </select>
+          <img src="images/giftcard.webp" alt="giftcard" />
+        </li>
+        <li class="offer-item" id="bookclub">
+          <div class="join">
+            <div id="join-club">Joining the Bookclub</div>
+            <div id="info">
+              We Built a Better BookClub We created BookClub to help busy,
+              diverse teams access powerful ideas in the best books. In other
+              words, we built a better book club. We firmly believe that a good
+              book can change the world (and your team). We’re here to help you
+              make it happen.
+            </div>
+            <button type="button" class="join-btn">Join</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="registration">
+      <form action="" name="register">
+        <div class="wrapper">
+          <h1>Register</h1>
+          <p>Please fill in this form to sign up for the bookclub</p>
+
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Enter Name and Lastname"
+            name="name"
+            id="name"
+            required
+          />
+          <p>Name must contain from 2 to 12 characters</p>
+
+          <label for="email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
+          <p>Email must be a valid email address<address></address></p>
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="text"
+            placeholder="Enter Phone Number"
+            name="phone"
+            id="phone"
+            required
+          />
+          <p>Telephone must be a valid number</p>
+
+          <button type="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/icon.png" alt="logo" class="logo_img" />
+        <div>Bookshop</div>
+      </a>
+      <div class="search_section">
+        <input
+          type="text"
+          id="input"
+          class="input_field"
+          placeholder="Type book name here"
+        />
+        <button onclick="getbooks()" class="search">
+          <img src="images/magnifier.svg" alt="magnifier" /></button
+        ><br />
+      </div>
+      <!-- <div class="location">Choose a Bookstore</div> -->
+      <nav>
+        <ul class="location">
+          <li class="list-item"><a href="about.html">About Us</a></li>
+          <li class="list-item">
+            <a href="location.html">Choose a Bookstore</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="cart.html"
+        ><img src="images/basket.svg" alt="basket" class="basket"
+      /></a>
+    </header>
+    <div id="output"></div>
+    <section class="contact_map">
+      <ul class="contact-info">
+        <li class="contact-item">
+          <a href="tel:+955 107 107">
+            <img src="images/phone.jpg" alt="phone" />
+          </a>
+          <a href="tel:+955 107 107">+955 107 107</a>
+        </li>
+        <li class="contact-item">
+          <a href="mailto:email@bookshop.com">
+            <img src="images/email.jpg" alt="email" />
+          </a>
+          <a href="mailto:email@bookshop.com">email@bookshop.com</a>
+        </li>
+      </ul>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.067510447644!2d44.77749032355127!3d41.70605710997824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cce3a01fef7%3A0x2a75ae2128072d6!2s30%20Vasil%20Petriashvili%20Street%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1664199593694!5m2!1sen!2sge"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <footer class="footer">
+      <div>Follow us</div>
+      <a><img src="" alt="facebook" /></a>
+      <a href=""><img src="" alt="twitter" /></a>
+      <a href=""><img src="" alt="" /></a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
