@@ -1,0 +1,1 @@
+# keti_gogia.bookshop
